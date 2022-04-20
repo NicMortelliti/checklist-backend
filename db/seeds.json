@@ -119,5 +119,21 @@
       "description": "EXTERNAL POWER",
       "response": "ON"
     }
+  ],
+  "aircraft": [
+    {
+      "id": 1,
+      "tail": "N6044P",
+      "manufacturer": "Cessna",
+      "model": "Skycatcher",
+      "image": "src/assets/skycatcher.jpg"
+    },
+    {
+      "id": 2,
+      "tail": "N220AB",
+      "manufacturer": "Airbus",
+      "model": "A220",
+      "image": "src/assets/A220.jpg"
+    }
   ]
 }
