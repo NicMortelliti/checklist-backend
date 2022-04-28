@@ -126,14 +126,16 @@
       "tail": "N6044P",
       "manufacturer": "Cessna",
       "model": "Skycatcher",
-      "image": "src/assets/skycatcher.jpg"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Cessna_162_Skycatcher_N5201K_0998.JPG/320px-Cessna_162_Skycatcher_N5201K_0998.JPG",
+      "Attribution": "Ahunt, Public domain, via Wikimedia Commons"
     },
     {
       "id": 2,
       "tail": "N220AB",
       "manufacturer": "Airbus",
       "model": "A220",
-      "image": "src/assets/A220.jpg"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Airbus_A220-300.jpg/320px-Airbus_A220-300.jpg",
+      "Attribution": "Romain COUPY, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
     }
   ]
 }
