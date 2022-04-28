@@ -118,6 +118,97 @@
       "phase": "Preflight",
       "description": "EXTERNAL POWER",
       "response": "ON"
+    },
+    {
+      "id": 18,
+      "tail": "N6044P",
+      "phase": "Emergency",
+      "description": "AIRSPEED",
+      "response": "70 KIAS"
+    },
+    {
+      "id": 19,
+      "tail": "N6044P",
+      "phase": "Emergency",
+      "description": "MIXTURE",
+      "response": "IDLE - CUT-OFF"
+    },
+    {
+      "id": 20,
+      "tail": "N6044P",
+      "phase": "Emergency",
+      "description": "FUEL",
+      "response": "CUT-OFF"
+    },
+    {
+      "id": 21,
+      "tail": "N6044P",
+      "phase": "Emergency",
+      "description": "MASTER",
+      "response": "OFF"
+    },
+    {
+      "id": 22,
+      "tail": "N6044P",
+      "phase": "Emergency",
+      "description": "MAGNETOS",
+      "response": "OFF"
+    },
+    {
+      "id": 23,
+      "tail": "N6044P",
+      "phase": "Emergency",
+      "description": "DOORS",
+      "response": "UNLATCHED"
+    },
+    {
+      "id": 24,
+      "tail": "N6044P",
+      "phase": "Emergency",
+      "description": "CARB HEAT",
+      "response": "ON"
+    },
+    {
+      "id": 25,
+      "tail": "N220AB",
+      "phase": "Emergency",
+      "description": "AIRSPEED",
+      "response": "170 KIAS"
+    },
+    {
+      "id": 26,
+      "tail": "N220AB",
+      "phase": "Emergency",
+      "description": "MIXTURE",
+      "response": "IDLE - CUT-OFF"
+    },
+    {
+      "id": 27,
+      "tail": "N220AB",
+      "phase": "Emergency",
+      "description": "FUEL",
+      "response": "CUT OFF"
+    },
+    {
+      "id": 28,
+      "tail": "N220AB",
+      "phase": "Emergency",
+      "description": "MASTER",
+      "response": "OFF"
+    },
+    {
+      "id": 29,
+      "tail": "N220AB",
+      "phase": "Emergency",
+      "description": "MAGNETOS",
+      "response": "OFF"
+    },
+    {
+      "id": 30,
+      "tail": "N220AB",
+      "phase": "Emergency",
+      "description": "DOORS",
+      "response": "UNLATCHED"
     }
   ],
   "aircraft": [
