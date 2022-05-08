@@ -228,5 +228,19 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Airbus_A220-300.jpg/320px-Airbus_A220-300.jpg",
       "Attribution": "Romain COUPY, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
     }
+  ],
+  "phases": [
+    { "id": 1, "phase": "Preflight" },
+    { "id": 2, "phase": "Taxi" },
+    { "id": 3, "phase": "Takeoff" },
+    { "id": 4, "phase": "Cruise" },
+    { "id": 5, "phase": "Landing" },
+    { "id": 6, "phase": "Emergency" }
+  ],
+  "responses": [
+    { "id": 1, "response": "70 KTS" },
+    { "id": 2, "response": "ACCESSIBLE" },
+    { "id": 3, "response": "COMPLETE" },
+    { "id": 4, "response": "EXTEND" }
   ]
 }
