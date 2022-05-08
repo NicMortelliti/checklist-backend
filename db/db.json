@@ -209,6 +209,48 @@
       "phase": "Emergency",
       "description": "DOORS",
       "response": "UNLATCHED"
+    },
+    {
+      "tail": "N6044P",
+      "phase": "Taxi",
+      "description": "Taxi Light & Strobes",
+      "response": "ON",
+      "id": 31
+    },
+    {
+      "tail": "N6044P",
+      "phase": "Taxi",
+      "description": "Brakes",
+      "response": "CHECK",
+      "id": 32
+    },
+    {
+      "tail": "N6044P",
+      "phase": "Taxi",
+      "description": "Flight Instruments",
+      "response": "VERIFY",
+      "id": 33
+    },
+    {
+      "tail": "N220AB",
+      "phase": "Taxi",
+      "description": "Flight Controls",
+      "response": "CHECK",
+      "id": 34
+    },
+    {
+      "tail": "N220AB",
+      "phase": "Taxi",
+      "description": "Flight Instruments",
+      "response": "VERIFY",
+      "id": 35
+    },
+    {
+      "tail": "N220AB",
+      "phase": "Taxi",
+      "description": "Briefing",
+      "response": "COMPLETE",
+      "id": 36
     }
   ],
   "aircraft": [
@@ -232,15 +274,19 @@
   "phases": [
     { "id": 1, "phase": "Preflight" },
     { "id": 2, "phase": "Taxi" },
-    { "id": 3, "phase": "Takeoff" },
-    { "id": 4, "phase": "Cruise" },
-    { "id": 5, "phase": "Landing" },
     { "id": 6, "phase": "Emergency" }
   ],
   "responses": [
-    { "id": 1, "response": "70 KTS" },
+    { "id": 1, "response": "PRESENT" },
     { "id": 2, "response": "ACCESSIBLE" },
     { "id": 3, "response": "COMPLETE" },
-    { "id": 4, "response": "EXTEND" }
+    { "id": 4, "response": "EXTEND" },
+    { "id": 5, "response": "ON" },
+    { "id": 6, "response": "OFF" },
+    { "id": 7, "response": "CHECK" },
+    { "id": 8, "response": "REMOVE" },
+    { "id": 9, "response": "ADJUST" },
+    { "id": 10, "response": "RETRACT" },
+    { "id": 11, "response": "VERIFY" }
   ]
 }
