@@ -23,12 +23,14 @@ $ npm start
 ```
 
 ## Usage
+### Categories
 The database is split up into 4 categories:
-  1. checklist
-  2. aircraft
-  3. phases
-  4. responses
+  1. [checklist](checklist)
+  2. [aircraft](aircraft)
+  3. [phases](phases)
+  4. [responses](responses)
 
+#### checklist
 The 'checklist' category contains all checklist items for all aircraft. Each checklist item **must** contain the following properties:
   1. id           <-- **Unique** id number
   2. isChecked    <-- Default state of the check button. "false" recommended
@@ -37,6 +39,7 @@ The 'checklist' category contains all checklist items for all aircraft. Each che
   5. description  <-- The checklist 'call', e.g. "Parking Brake"
   6. response     <-- The checklist response, e.g. "OFF"
 
+#### aircraft
 The 'aircraft' category contains information regarding each aircraft the owner/operator chooses to support with this checklist. Each aircraft item **must** contain the following properties:
   1. id           <-- **Unique** id number
   2. tail         <-- Aircraft registration number
@@ -45,8 +48,18 @@ The 'aircraft' category contains information regarding each aircraft the owner/o
   5. image        <-- URL to an image of the aircraft stored
   6. attribution  <-- **Optional** information regarding image author and applicable license
 
-### Modifying the database
+#### phases
+The 'phases' category contains the flight phases that will contain checklist items. These phases are listed on the flight phases selection page of the application.
+  1. id     <-- **Unique** id number
+  2. phase  <-- Name of the flight phase
 
+#### responses
+The 'responses' category contains a collection of supported checklist item responses. These populate the 'Response' dropdown menu in the New Item Checklist form.
+  1. id       <-- **Unique** id number
+  2. response <-- Checklist item response, typically written in call caps.
+
+### Modifying the database
+To modify the database, edit the 'seeds.json' file found in the 'db' directory. Be sure to familiarize yourself with the database [categories](categories) before making changes. When your updates are complete, run `npm run seed`. This will populate the actual database 'db.json' file with all of the data from 'seeds.json'
 
 ## License
 
