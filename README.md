@@ -25,10 +25,10 @@ $ npm start
 ## Usage
 ### Categories
 The database is split up into 4 categories:
-  1. [checklist](checklist)
-  2. [aircraft](aircraft)
-  3. [phases](phases)
-  4. [responses](responses)
+  1. [checklist](#checklist)
+  2. [aircraft](#aircraft)
+  3. [phases](#phases)
+  4. [responses](#responses)
 
 #### checklist
 The 'checklist' category contains all checklist items for all aircraft. Each checklist item **must** contain the following properties:
@@ -59,7 +59,7 @@ The 'responses' category contains a collection of supported checklist item respo
   2. response <-- Checklist item response, typically written in call caps.
 
 ### Modifying the database
-To modify the database, edit the 'seeds.json' file found in the 'db' directory. Be sure to familiarize yourself with the database [categories](categories) before making changes. When your updates are complete, run `npm run seed`. This will populate the actual database 'db.json' file with all of the data from 'seeds.json'
+To modify the database, edit the 'seeds.json' file found in the 'db' directory. Be sure to familiarize yourself with the database [categories](#categories) before making changes. When your updates are complete, run `npm run seed`. This will populate the actual database 'db.json' file with all of the data from 'seeds.json'
 
 ## License
 
