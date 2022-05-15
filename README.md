@@ -1,80 +1,53 @@
-# JSON Server Template
+# Flying Checklist - Backend
 
-## Setup
+**Note: This app is only meant to be a demonstration of React development. It is NOT intended to be used for flight.**
 
-Fork and clone this repo. Then install the dependencies by running:
+This is the backend for a React application that digitizes the paper checklist commonly used by pilots. An aircraft owner/operator populates the backend database with information regarding the aircraft in their fleet (e.g. tail number, make, model and a link to an image of the aircraft), as well as checklist items categorized by phase of flight. The user has the capability to add new checklist items as well using the New Item Form.
 
-```sh
-npm install
+## Installation
+
+**Note: This is the back-end of the application only. You may install the frontend, [found here](https://github.com/NicMortelliti/checklist-frontend).**
+
+1. Clone this repo to a local directory.
+
+2. Use the package manager [npm](https://www.npmjs.com/) to install the dependencies.
+
+```bash
+$ npm install --legacy-peer-deps
 ```
 
-## Seeding Data
+3. Finally, start the server. TIP: The frontend relies on this backend running on port 3000. So if running alonside the frontend, start this backend first so that it can claim port 3000.
 
-To set up your database, update the `db/seeds.json` file to contain an object
-with a key pointing to an array of data, like this:
-
-```json
-{
-  "toys": [
-    {
-      "id": 1,
-      "name": "Woody",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 8
-    },
-    {
-      "id": 2,
-      "name": "Buzz Lightyear",
-      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 14
-    }
-  ]
-}
+```bash
+$ npm start
 ```
 
-Then, run `npm run seed` to copy data from the `db/seeds.json` file to the
-`db/db.json` file. `json-server` uses the `db.json` file to create your RESTful
-API, so make sure your `db.json` file is always up to date!
+## Usage
+The database is split up into 4 categories:
+  1. checklist
+  2. aircraft
+  3. phases
+  4. responses
 
-Any time you want to reset your database back to your original data, run
-`npm run seed` again. Doing this will overwrite all the data in your `db.json`
-file, so make sure you don't have any data in that file that you don't mind
-losing!
+The 'checklist' category contains all checklist items for all aircraft. Each checklist item **must** contain the following properties:
+  1. id           <-- **Unique** id number
+  2. isChecked    <-- Default state of the check button. "false" recommended
+  3. tail         <-- Aircraft registration number
+  4. phase        <-- Flight phase this checklist item pertains to
+  5. description  <-- The checklist 'call', e.g. "Parking Brake"
+  6. response     <-- The checklist response, e.g. "OFF"
 
-## Running the Server Locally
+The 'aircraft' category contains information regarding each aircraft the owner/operator chooses to support with this checklist. Each aircraft item **must** contain the following properties:
+  1. id           <-- **Unique** id number
+  2. tail         <-- Aircraft registration number
+  3. manufacturer <-- Aircraft manufacturer, e.g. "Cessna", "Boeing", etc.
+  4. model        <-- Aircraft model name, e.g. "Caravan", "F-16", etc.
+  5. image        <-- URL to an image of the aircraft stored
+  6. attribution  <-- **Optional** information regarding image author and applicable license
 
-To run your server in development mode, run:
+### Modifying the database
 
-```sh
-npm run dev
-```
 
-While running in development mode, the server will re-load any time you make
-changes to the `db.json` file, so you can test our your seed data.
+## License
 
-While your server is running, you can make requests to
-[http://localhost:3000](http://localhost:3000). Check it out in the browser to
-make sure your server works!
-
-## Deploying the Server
-
-Free services like Heroku make it simple to deploy your Node server. Heroku also
-works nicely with Rails, which you'll learn later in the program.
-
-First, download the [Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up).
-
-Then, [deploy your app](https://devcenter.heroku.com/articles/getting-started-with-nodejs#deploy-the-app).
-
-Since Heroku deployment integrates with your git repo, you can easily deploy
-changes to your database. To deploy changes, make sure to commit your code:
-
-```sh
-git add .
-git commit -m "Updated database"
-```
-
-Then push your main/default branch up to Heroku:
-
-```sh
-git push heroku main
-```
+[MIT](https://choosealicense.com/licenses/mit/)
