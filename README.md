@@ -1,7 +1,5 @@
 # Flying Checklist - Backend
 
-![Heroku](https://pyheroku-badge.herokuapp.com/?app=pilot-checklist&style=flat-square)
-
 **Note: This app is only meant to be a demonstration of React development. It is NOT intended to be used for flight.**
 
 This is the backend for a React application that digitizes the paper checklist commonly used by pilots. An aircraft owner/operator populates the backend database with information regarding the aircraft in their fleet (e.g. tail number, make, model and a link to an image of the aircraft), as well as checklist items categorized by phase of flight. The user has the capability to add new checklist items as well using the New Item Form.
