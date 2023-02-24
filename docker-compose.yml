@@ -1,0 +1,16 @@
+version: '3'
+services:
+  db:
+    build: .
+    image: "node:16"
+    container_name: checklist-server
+    working_dir: /home/node/app
+    volumes:
+      - ./:/home/node/app
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "5435:3000"
+    user: "node"
+    command: "npm start"
+    restart: always
