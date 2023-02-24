@@ -4,8 +4,7 @@ WORKDIR /home/node/app
 
 COPY package*.json ./
 
-# The following 'ci' command 
-# is similar to 'npm install'
+RUN npm install
 RUN npm ci --only=production
 
 COPY . .
