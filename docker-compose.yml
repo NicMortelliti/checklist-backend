@@ -6,4 +6,4 @@ services:
       - "5435:5432"
     user: "node"
     volumes:
-      - "./db:/app/db"
+      - "./db:./db/"
