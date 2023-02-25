@@ -10,7 +10,7 @@ services:
     environment:
       - NODE_ENV=production
     ports:
-      - "5435:3000"
+      - "5435:5432"
     user: "node"
     command: "npm start"
     restart: always
