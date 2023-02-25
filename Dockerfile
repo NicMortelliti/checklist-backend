@@ -1,4 +1,13 @@
-FROM node:16
-RUN npm install -g json-server
-WORKDIR /data
-EXPOSE 3000
+FROM node:14
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 5432
+
+CMD [ "npm", "run", "start" ]
