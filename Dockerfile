@@ -1,8 +1,8 @@
 FROM node:16
 
-# WORKDIR /home/node/app
+WORKDIR /home/node/app
 
-COPY package*.json ./
+COPY package*.json /home/node/app/
 
 RUN npm install
 RUN npm ci --only=production
