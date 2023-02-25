@@ -1,16 +1,14 @@
 version: '3'
 services:
   db:
-    build: .
-    image: "node:16"
     container_name: checklist-server
-    working_dir: /home/node/app
+    image: "json-server"
+    build: .
+    ports:
+      - "5435:3000"
     volumes:
-      - ./:/home/node/app
+      - ./db/db.json:/data/db.json
     environment:
       - NODE_ENV=production
-    ports:
-      - "5435:5432"
-    user: "node"
-    command: "npm start"
+    command: "json-server --watch /data/db.json --host 0.0.0.0"
     restart: always
