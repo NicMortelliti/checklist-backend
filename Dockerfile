@@ -6,4 +6,4 @@ COPY db/db.json db/db.json
 
 RUN yarn global add json-server
 
-CMD ["json-server", "/opt/mockBackend.json"]
+CMD ["json-server", "/db/db.json"]
