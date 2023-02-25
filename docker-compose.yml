@@ -2,7 +2,7 @@ version: '3'
 services:
   db:
     container_name: checklist-server
-    image: "json-server"
+    image: "node:16"
     build: .
     ports:
       - "5435:3000"
