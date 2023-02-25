@@ -1,13 +1,9 @@
-FROM node:19
-
-WORKDIR /app
-
-COPY package*.json ./
-
-RUN npm install
-
-COPY . .
+FROM node:alpine
 
 EXPOSE 5432
 
-CMD [ "npm", "run", "start" ]
+COPY db/db.json db/db.json
+
+RUN yarn global add json-server
+
+CMD ["json-server", "/opt/mockBackend.json"]
