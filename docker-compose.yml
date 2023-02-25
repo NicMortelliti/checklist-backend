@@ -4,5 +4,6 @@ services:
     build: .
     ports:
       - "5435:5432"
+    user: "node"
     volumes:
       - "./db:/app/db"
