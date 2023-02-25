@@ -1,9 +1,0 @@
-version: "3"
-services:
-  json-server:
-    build: .
-    ports:
-      - "5435:5432"
-    user: "node"
-    volumes:
-      - "./db:./db/"
